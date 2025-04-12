@@ -13,7 +13,7 @@ public class App {
 			player2.draw(deck);
 			
 		}
-		for (int i = 0; i < 13; i++) {
+		for (int i = 0; i < 26; i++) {
 			Card p1Flip = player1.flip();
 			Card p2Flip = player2.flip();
 			if (p1Flip != null) {
@@ -24,11 +24,11 @@ public class App {
 			}
 			if (p1Flip.getValue() > p2Flip.getValue()) {
 				player1.incrementScore();
-				System.out.println(player1.getName() + " +1 point " + "\n---Score--- \n" + player1.getName() + ": " + player1.getScore() + "\n" +player2.getName() + ": " +player2.getScore());
+				System.out.println(player1.getName() + " +1 point " + "\n---Score--- \n" + player1.getName() + ": " + player1.getScore() + "\n" +player2.getName() + ": " +player2.getScore() + "\n-----------");
 			} else if (p1Flip.getValue() == p2Flip.getValue()) {
 				System.out.println("||Round Tie|| " + "\n---Score--- \n" + player1.getName() + ": " + player1.getScore() + "\n" +player2.getName() + ": " +player2.getScore());
 			} else { player2.incrementScore();
-			System.out.println(player2.getName() + " +1 point.  " + "\n---Score--- \n" + player1.getName() + ": " + player1.getScore() + "\n" +player2.getName() + ": " +player2.getScore());
+			System.out.println(player2.getName() + " +1 point.  " + "\n---Score--- \n" + player1.getName() + ": " + player1.getScore() + "\n" +player2.getName() + ": " +player2.getScore() + "\n-----------");
 			}
 	} Player.finalScore(player1, player2);
 
